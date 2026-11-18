@@ -1,29 +1,22 @@
-SISTEMA VERDULERÍAS - V3 CATÁLOGO AMPLIADO
+SISTEMA VERDULERIAS - V4 - Catalogo ampliado y dictado
 
-Catálogo común: 230 artículos y presentaciones (antes 66).
+Publicar desde PowerShell con Actualizar_Verdulerias_GitHub_v4.ps1.
 
-- Papines: surtidos, colorados y amarillos.
-- Más frutas, hortalizas, hierbas y productos regionales.
-- Almacén ampliado: aceites, mieles, huevos, condimentos, secos,
-  legumbres, frutos secos, cereales y conservas.
-- Selección de tipo/presentación para aceite, miel y otros artículos.
-- Prueba por voz y alternativa táctil.
-- Los artículos nuevos empiezan sin precio y no se consideran publicados
-  hasta que el comercio les asigna un importe.
-- Se conservan los IDs anteriores y los datos del navegador (localStorage).
-- Los precios ya precargados de V2 siguen siendo valores ilustrativos.
+Esta entrega tiene 440 articulos, variedades y presentaciones
+(210 articulos mas que V3).
 
-EJEMPLOS PARA PROBAR EN CHROME ANDROID
-Papines, 2300 el kilo
-Aceite de oliva, 9500 la botella
-Miel de 500 gramos, 6700 el frasco
-Orégano, 1400 la bolsa
-Harina, 1200 el paquete
+Pruebas principales:
+- "miel 6500 el frasco" => elegir presentacion y guardar precio.
+- "miel" => elegir presentacion, indicar precio manualmente y guardar.
+- "papines 2300 el kilo" => variedades de papines.
+- "aceite de oliva 9500" => aceite por presentacion.
+- "quinoa 4800" => variedades de quinoa.
+- "cajon" no debe generar un producto erroneo.
 
-PUBLICACIÓN
-Usar el script de actualización de GitHub, NO el de primera creación.
-URL pública de prueba: https://jwgf.github.io/sistema-verdulerias-demo/
+Si Chrome entiende otra palabra, la aplicacion mostrara exactamente lo que
+transcribio Chrome para diferenciar dictado de reconocimiento de catalogo.
 
-Demo sin base de datos: los cambios se guardan en el navegador del dispositivo.
-GitHub Pages es público; usar datos ficticios.
-El reconocimiento de voz depende de Chrome Android y sus permisos.
+Los precios guardados en este mismo navegador se conservan porque permanece
+igual la clave de almacenamiento y los codigos de todos los productos V3.
+Los datos son locales: no hay backend ni pedidos reales.
+El sitio en GitHub Pages es publico: usar datos de prueba.
