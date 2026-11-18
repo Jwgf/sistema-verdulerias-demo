@@ -160,16 +160,319 @@ const CAT = [
  ['perejil','perejil','Perejil','','Verduras','🌿','atado',850,'#e9f5e4'],
  ['huevos-docena','huevos','Huevos blancos','Blancos','Almacén','🥚','docena',3500,'#f8f0de'],
  ['huevos-color','huevos','Huevos colorados','Colorados','Almacén','🥚','docena',3800,'#f8efde'],
- ['aceite-oliva','aceite','Aceite de oliva','','Almacén','🫒','botella',8500,'#eff3d9'],
- ['oregano','oregano','Orégano en bolsa','','Almacén','🌿','bolsa',1400,'#eaf5df'],
- ['miel','miel','Miel','','Almacén','🍯','frasco',6200,'#fff0db'],
- ['arroz','arroz','Arroz','','Almacén','🍚','paquete',2100,'#f1f2ef'],
- ['azucar','azucar','Azúcar','','Almacén','🫙','paquete',1500,'#f4f3ec'],
- ['lentejas','lentejas','Lentejas','','Almacén','🫘','paquete',2700,'#f1eade']
+ ['aceite-oliva','aceite','Aceite de oliva 500 ml','Oliva 500 ml','Almacén','🫒','botella',8500,'#eff3d9'],
+ ['oregano','oregano','Orégano seco 25 g','25 g','Almacén','🌿','bolsa',1400,'#eaf5df'],
+ ['miel','miel','Miel pura 500 g','500 g','Almacén','🍯','frasco',6200,'#fff0db'],
+ ['arroz','arroz','Arroz blanco 1 kg','Blanco 1 kg','Almacén','🍚','paquete',2100,'#f1f2ef'],
+ ['azucar','azucar','Azúcar blanca 1 kg','Blanca 1 kg','Almacén','🫙','paquete',1500,'#f4f3ec'],
+ ['lentejas','lentejas','Lentejas 1 kg','1 kg','Almacén','🫘','paquete',2700,'#f1eade'],
+ ["pomelo-rosado","pomelo","Pomelo rosado","Rosado","Frutas","🍊","kg",0,"#fff0df"],
+ ["pomelo-blanco","pomelo","Pomelo blanco","Blanco","Frutas","🍊","kg",0,"#fff0df"],
+ ["ciruela-roja","ciruela","Ciruela roja","Roja","Frutas","🍑","kg",0,"#fff0df"],
+ ["ciruela-amarilla","ciruela","Ciruela amarilla","Amarilla","Frutas","🍑","kg",0,"#fff0df"],
+ ["cereza","cereza","Cereza","","Frutas","🍒","kg",0,"#fff0df"],
+ ["damasco","damasco","Damasco","","Frutas","🍑","kg",0,"#fff0df"],
+ ["pelon","pelon","Pelón / nectarina","","Frutas","🍑","kg",0,"#fff0df"],
+ ["higo-negro","higo","Higo negro","Negro","Frutas","🍇","kg",0,"#fff0df"],
+ ["higo-verde","higo","Higo verde","Verde","Frutas","🍇","kg",0,"#fff0df"],
+ ["anana","anana","Ananá","","Frutas","🍍","unidad",0,"#fff0df"],
+ ["mango","mango","Mango","","Frutas","🥭","unidad",0,"#fff0df"],
+ ["papaya","papaya","Papaya","","Frutas","🥭","unidad",0,"#fff0df"],
+ ["granada","granada","Granada","","Frutas","🍎","unidad",0,"#fff0df"],
+ ["caqui","caqui","Caqui / kaki","","Frutas","🍊","kg",0,"#fff0df"],
+ ["membrillo","membrillo","Membrillo","","Frutas","🍐","kg",0,"#fff0df"],
+ ["lima","lima","Lima","","Frutas","🍋","kg",0,"#fff0df"],
+ ["maracuya","maracuya","Maracuyá","","Frutas","🥭","unidad",0,"#fff0df"],
+ ["arandanos","arandanos","Arándanos","","Frutas","🫐","bandeja",0,"#fff0df"],
+ ["frambuesa","frambuesa","Frambuesa","","Frutas","🫐","bandeja",0,"#fff0df"],
+ ["mora","mora","Mora","","Frutas","🫐","bandeja",0,"#fff0df"],
+ ["nispero","nispero","Níspero","","Frutas","🍑","kg",0,"#fff0df"],
+ ["quinoto","quinoto","Quinoto / kumquat","","Frutas","🍊","kg",0,"#fff0df"],
+ ["coco","coco","Coco","","Frutas","🥥","unidad",0,"#fff0df"],
+ ["tuna","tuna","Tuna","","Frutas","🍐","kg",0,"#fff0df"],
+ ["guayaba","guayaba","Guayaba","","Frutas","🍐","kg",0,"#fff0df"],
+ ["uva-rosada","uva","Uva rosada","Rosada","Frutas","🍇","kg",0,"#fff0df"],
+ ["manzana-pink-lady","manzana","Manzana Pink Lady","Pink Lady","Frutas","🍎","kg",0,"#fff0df"],
+ ["pera-conferencia","pera","Pera conferencia","Conferencia","Frutas","🍐","kg",0,"#fff0df"],
+ ["mandarina-murcott","mandarina","Mandarina Murcott","Murcott","Frutas","🍊","kg",0,"#fff0df"],
+ ["mandarina-criolla","mandarina","Mandarina criolla","Criolla","Frutas","🍊","kg",0,"#fff0df"],
+ ["durazno-blanco","durazno","Durazno blanco","Blanco","Frutas","🍑","kg",0,"#fff0df"],
+ ["durazno-amarillo","durazno","Durazno amarillo","Amarillo","Frutas","🍑","kg",0,"#fff0df"],
+ ["frutilla-kg","frutilla","Frutilla por kilo","Por kilo","Frutas","🍓","kg",0,"#fff0df"],
+ ["papines-surtidos","papines","Papines surtidos","Surtidos","Verduras","🥔","kg",0,"#e7f4e6"],
+ ["papines-colorados","papines","Papines colorados","Colorados","Verduras","🥔","kg",0,"#e7f4e6"],
+ ["papines-amarillos","papines","Papines amarillos","Amarillos","Verduras","🥔","kg",0,"#e7f4e6"],
+ ["papa-andina","papa","Papa andina","Andina","Verduras","🥔","kg",0,"#e7f4e6"],
+ ["papa-lavada","papa","Papa lavada","Lavada","Verduras","🥔","kg",0,"#e7f4e6"],
+ ["repollo-blanco","repollo","Repollo blanco","Blanco","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["repollo-morado","repollo","Repollo morado","Morado","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["coliflor","coliflor","Coliflor","","Verduras","🥦","unidad",0,"#e7f4e6"],
+ ["apio","apio","Apio","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["puerro","puerro","Puerro","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["hinojo","hinojo","Hinojo","","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["esparragos","esparragos","Espárragos","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["alcaucil","alcaucil","Alcaucil / alcachofa","","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["chaucha-redonda","chaucha","Chaucha redonda","Redonda","Verduras","🫛","kg",0,"#e7f4e6"],
+ ["chaucha-plana","chaucha","Chaucha plana","Plana","Verduras","🫛","kg",0,"#e7f4e6"],
+ ["arvejas-frescas","arvejas","Arvejas frescas","","Verduras","🫛","kg",0,"#e7f4e6"],
+ ["habas","habas","Habas frescas","","Verduras","🫛","kg",0,"#e7f4e6"],
+ ["rabanito","rabanito","Rabanito","","Verduras","🥕","atado",0,"#e7f4e6"],
+ ["nabo","nabo","Nabo","","Verduras","🥕","kg",0,"#e7f4e6"],
+ ["kale","kale","Kale / col rizada","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["berro","berro","Berro","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["radicheta","radicheta","Radicheta","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["achicoria","achicoria","Achicoria","","Verduras","🥬","atado",0,"#e7f4e6"],
+ ["radicchio","radicchio","Radicchio","","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["endivia","endivia","Endivia","","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["champinones","champinones","Champiñones","","Verduras","🍄","bandeja",0,"#e7f4e6"],
+ ["portobellos","portobellos","Hongos portobello","","Verduras","🍄","bandeja",0,"#e7f4e6"],
+ ["hongos-girgolas","girgolas","Gírgolas","","Verduras","🍄","bandeja",0,"#e7f4e6"],
+ ["jengibre","jengibre","Jengibre","","Verduras","🫚","kg",0,"#e7f4e6"],
+ ["curcuma-fresca","curcuma-fresca","Cúrcuma fresca","","Verduras","🫚","kg",0,"#e7f4e6"],
+ ["mandioca","mandioca","Mandioca","","Verduras","🥔","kg",0,"#e7f4e6"],
+ ["zapallo-plomo","zapallo","Zapallo plomo","Plomo","Verduras","🎃","kg",0,"#e7f4e6"],
+ ["zapallo-criollo","zapallo","Zapallo criollo","Criollo","Verduras","🎃","kg",0,"#e7f4e6"],
+ ["zapallo-calabaza","zapallo","Calabaza","Calabaza","Verduras","🎃","kg",0,"#e7f4e6"],
+ ["zapallo-tronco","zapallo-tronco","Zapallo de tronco","","Verduras","🥒","kg",0,"#e7f4e6"],
+ ["cebolla-colorada","cebolla","Cebolla colorada","Colorada","Verduras","🧅","kg",0,"#e7f4e6"],
+ ["cebollin","cebollin","Cebollín","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["cilantro","cilantro","Cilantro","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["albahaca","albahaca","Albahaca","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["menta","menta","Menta","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["romero-fresco","romero","Romero fresco","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["tomillo-fresco","tomillo","Tomillo fresco","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["salvia-fresca","salvia","Salvia fresca","","Verduras","🌿","atado",0,"#e7f4e6"],
+ ["ajen-picante","aji","Ají picante","Picante","Verduras","🌶️","kg",0,"#e7f4e6"],
+ ["aji-jalapeno","aji","Ají jalapeño","Jalapeño","Verduras","🌶️","kg",0,"#e7f4e6"],
+ ["aji-verde","aji","Ají verde","Verde","Verduras","🌶️","kg",0,"#e7f4e6"],
+ ["pimiento-california","morron","Morrón California","California","Verduras","🫑","kg",0,"#e7f4e6"],
+ ["pepino-kiwano","pepino","Pepino kiwano","Kiwano","Verduras","🥒","unidad",0,"#e7f4e6"],
+ ["tomate-racimo","tomate","Tomate en racimo","En racimo","Verduras","🍅","kg",0,"#e7f4e6"],
+ ["tomate-cherry-kg","tomate","Tomate cherry por kilo","Cherry por kilo","Verduras","🍅","kg",0,"#e7f4e6"],
+ ["ajo-cabeza","ajo","Ajo por cabeza","Cabeza","Verduras","🧄","unidad",0,"#e7f4e6"],
+ ["ajo-kg","ajo","Ajo por kilo","Por kilo","Verduras","🧄","kg",0,"#e7f4e6"],
+ ["lechuga-francesa","lechuga","Lechuga francesa","Francesa","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["lechuga-capuchina","lechuga","Lechuga capuchina","Capuchina","Verduras","🥬","unidad",0,"#e7f4e6"],
+ ["repollo-bruselas","repollo-bruselas","Repollitos de Bruselas","","Verduras","🥬","kg",0,"#e7f4e6"],
+ ["aceite-oliva-250","aceite","Aceite de oliva 250 ml","Oliva 250 ml","Almacén","🫒","botella",0,"#f5f1e3"],
+ ["aceite-oliva-1000","aceite","Aceite de oliva 1 litro","Oliva 1 litro","Almacén","🫒","botella",0,"#f5f1e3"],
+ ["aceite-girasol-900","aceite","Aceite de girasol 900 ml","Girasol 900 ml","Almacén","🫙","botella",0,"#f5f1e3"],
+ ["aceite-girasol-1500","aceite","Aceite de girasol 1,5 litros","Girasol 1,5 l","Almacén","🫙","botella",0,"#f5f1e3"],
+ ["aceite-maiz-900","aceite","Aceite de maíz 900 ml","Maíz 900 ml","Almacén","🫙","botella",0,"#f5f1e3"],
+ ["aceite-mezcla-900","aceite","Aceite mezcla 900 ml","Mezcla 900 ml","Almacén","🫙","botella",0,"#f5f1e3"],
+ ["miel-250","miel","Miel pura 250 g","250 g","Almacén","🍯","frasco",0,"#f5f1e3"],
+ ["miel-1000","miel","Miel pura 1 kg","1 kg","Almacén","🍯","frasco",0,"#f5f1e3"],
+ ["miel-organica-500","miel","Miel orgánica 500 g","Orgánica 500 g","Almacén","🍯","frasco",0,"#f5f1e3"],
+ ["oregano-50","oregano","Orégano seco 50 g","50 g","Almacén","🌿","bolsa",0,"#f5f1e3"],
+ ["oregano-100","oregano","Orégano seco 100 g","100 g","Almacén","🌿","bolsa",0,"#f5f1e3"],
+ ["huevos-media","huevos","Huevos blancos ½ docena","Media docena blancos","Almacén","🥚","media docena",0,"#f5f1e3"],
+ ["huevos-campo","huevos","Huevos de campo por docena","De campo","Almacén","🥚","docena",0,"#f5f1e3"],
+ ["huevos-maple","huevos","Maple de huevos (30)","Maple de 30","Almacén","🥚","maple",0,"#f5f1e3"],
+ ["sal-fina","sal","Sal fina 500 g","Fina 500 g","Almacén","🧂","paquete",0,"#f5f1e3"],
+ ["sal-gruesa","sal","Sal gruesa 1 kg","Gruesa 1 kg","Almacén","🧂","paquete",0,"#f5f1e3"],
+ ["pimienta-negra","pimienta","Pimienta negra 25 g","Negra 25 g","Almacén","🧂","sobre",0,"#f5f1e3"],
+ ["pimienta-blanca","pimienta","Pimienta blanca 25 g","Blanca 25 g","Almacén","🧂","sobre",0,"#f5f1e3"],
+ ["pimenton","pimenton","Pimentón 25 g","","Almacén","🌶️","sobre",0,"#f5f1e3"],
+ ["aji-molido","aji-molido","Ají molido 25 g","","Almacén","🌶️","sobre",0,"#f5f1e3"],
+ ["comino","comino","Comino 25 g","","Almacén","🧂","sobre",0,"#f5f1e3"],
+ ["ajo-polvo","ajo-polvo","Ajo en polvo 25 g","","Almacén","🧄","sobre",0,"#f5f1e3"],
+ ["canela","canela","Canela molida 25 g","","Almacén","🧂","sobre",0,"#f5f1e3"],
+ ["curry","curry","Curry 25 g","","Almacén","🧂","sobre",0,"#f5f1e3"],
+ ["curcuma-polvo","curcuma-polvo","Cúrcuma en polvo 25 g","","Almacén","🧂","sobre",0,"#f5f1e3"],
+ ["laurel","laurel","Laurel en bolsa","","Almacén","🌿","bolsa",0,"#f5f1e3"],
+ ["romero-seco","romero-seco","Romero seco en bolsa","","Almacén","🌿","bolsa",0,"#f5f1e3"],
+ ["tomillo-seco","tomillo-seco","Tomillo seco en bolsa","","Almacén","🌿","bolsa",0,"#f5f1e3"],
+ ["azucar-mascabo","azucar","Azúcar mascabo 1 kg","Mascabo 1 kg","Almacén","🫙","paquete",0,"#f5f1e3"],
+ ["azucar-rubia","azucar","Azúcar rubia 1 kg","Rubia 1 kg","Almacén","🫙","paquete",0,"#f5f1e3"],
+ ["arroz-integral","arroz","Arroz integral 1 kg","Integral 1 kg","Almacén","🍚","paquete",0,"#f5f1e3"],
+ ["arroz-parboil","arroz","Arroz parboil 1 kg","Parboil 1 kg","Almacén","🍚","paquete",0,"#f5f1e3"],
+ ["lentejas-500","lentejas","Lentejas 500 g","500 g","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["lentejas-1000","lentejas","Lentejas 1 kg","1 kg","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["garbanzos-500","garbanzos","Garbanzos 500 g","500 g","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["garbanzos-1000","garbanzos","Garbanzos 1 kg","1 kg","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["porotos-blancos","porotos","Porotos alubia 500 g","Alubia 500 g","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["porotos-negros","porotos","Porotos negros 500 g","Negros 500 g","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["porotos-colorados","porotos","Porotos colorados 500 g","Colorados 500 g","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["arvejas-secas","arvejas-secas","Arvejas secas 500 g","","Almacén","🫘","paquete",0,"#f5f1e3"],
+ ["polenta","polenta","Polenta 500 g","","Almacén","🌽","paquete",0,"#f5f1e3"],
+ ["avena","avena","Avena 500 g","","Almacén","🌾","paquete",0,"#f5f1e3"],
+ ["maiz-pisingallo","pisingallo","Maíz pisingallo 500 g","","Almacén","🌽","paquete",0,"#f5f1e3"],
+ ["harina-000","harina","Harina 000 1 kg","000 1 kg","Almacén","🌾","paquete",0,"#f5f1e3"],
+ ["harina-0000","harina","Harina 0000 1 kg","0000 1 kg","Almacén","🌾","paquete",0,"#f5f1e3"],
+ ["harina-integral","harina","Harina integral 1 kg","Integral 1 kg","Almacén","🌾","paquete",0,"#f5f1e3"],
+ ["fideos-tirabuzon","fideos","Fideos tirabuzón 500 g","Tirabuzón 500 g","Almacén","🍝","paquete",0,"#f5f1e3"],
+ ["fideos-tallarin","fideos","Fideos tallarines 500 g","Tallarines 500 g","Almacén","🍝","paquete",0,"#f5f1e3"],
+ ["semillas-chia","chia","Semillas de chía 100 g","","Almacén","🌱","bolsa",0,"#f5f1e3"],
+ ["semillas-lino","lino","Semillas de lino 100 g","","Almacén","🌱","bolsa",0,"#f5f1e3"],
+ ["semillas-sesamo","sesamo","Semillas de sésamo 100 g","","Almacén","🌱","bolsa",0,"#f5f1e3"],
+ ["semillas-girasol","girasol","Semillas de girasol 100 g","","Almacén","🌻","bolsa",0,"#f5f1e3"],
+ ["nueces","nueces","Nueces peladas 100 g","","Almacén","🌰","bolsa",0,"#f5f1e3"],
+ ["almendras","almendras","Almendras 100 g","","Almacén","🌰","bolsa",0,"#f5f1e3"],
+ ["mani","mani","Maní tostado 100 g","","Almacén","🥜","bolsa",0,"#f5f1e3"],
+ ["pasas-uva","pasas","Pasas de uva 100 g","","Almacén","🍇","bolsa",0,"#f5f1e3"],
+ ["ciruelas-pasas","ciruelas-pasas","Ciruelas pasas 100 g","","Almacén","🍇","bolsa",0,"#f5f1e3"],
+ ["coco-rallado","coco-rallado","Coco rallado 100 g","","Almacén","🥥","bolsa",0,"#f5f1e3"],
+ ["yerba-500","yerba","Yerba mate 500 g","500 g","Almacén","🧉","paquete",0,"#f5f1e3"],
+ ["yerba-1000","yerba","Yerba mate 1 kg","1 kg","Almacén","🧉","paquete",0,"#f5f1e3"],
+ ["cafe","cafe","Café molido 250 g","","Almacén","☕","paquete",0,"#f5f1e3"],
+ ["te","te","Té en saquitos","","Almacén","🍵","caja",0,"#f5f1e3"],
+ ["cacao","cacao","Cacao en polvo 180 g","","Almacén","🍫","paquete",0,"#f5f1e3"],
+ ["vinagre-alcohol","vinagre","Vinagre de alcohol 1 litro","Alcohol 1 litro","Almacén","🫙","botella",0,"#f5f1e3"],
+ ["vinagre-manzana","vinagre","Vinagre de manzana 500 ml","Manzana 500 ml","Almacén","🫙","botella",0,"#f5f1e3"],
+ ["aceitunas-verdes","aceitunas","Aceitunas verdes 200 g","Verdes 200 g","Almacén","🫒","frasco",0,"#f5f1e3"],
+ ["aceitunas-negras","aceitunas","Aceitunas negras 200 g","Negras 200 g","Almacén","🫒","frasco",0,"#f5f1e3"],
+ ["mermelada-durazno","mermelada","Mermelada de durazno 454 g","Durazno 454 g","Almacén","🍑","frasco",0,"#f5f1e3"],
+ ["mermelada-frutilla","mermelada","Mermelada de frutilla 454 g","Frutilla 454 g","Almacén","🍓","frasco",0,"#f5f1e3"],
+ ["dulce-membrillo","dulce","Dulce de membrillo 500 g","Membrillo 500 g","Almacén","🍐","paquete",0,"#f5f1e3"],
+ ["dulce-batata","dulce","Dulce de batata 500 g","Batata 500 g","Almacén","🍠","paquete",0,"#f5f1e3"],
+ ["pure-tomate","pure-tomate","Puré de tomate 520 g","","Almacén","🍅","caja",0,"#f5f1e3"],
+ ["tomate-triturado","tomate-triturado","Tomate triturado 500 g","","Almacén","🍅","caja",0,"#f5f1e3"],
+ ["choclo-lata","choclo-lata","Choclo en lata 300 g","","Almacén","🌽","lata",0,"#f5f1e3"],
+ ["arvejas-lata","arvejas-lata","Arvejas en lata 300 g","","Almacén","🫛","lata",0,"#f5f1e3"],
+ ["agua-mineral","agua","Agua mineral 1,5 litros","","Almacén","💧","botella",0,"#f5f1e3"],
 ].map(a=>({id:a[0],family:a[1],name:a[2],variant:a[3],category:a[4],emoji:a[5],unit:a[6],defaultPrice:a[7],bg:a[8]}));
 const PRODUCT_BY_ID = Object.fromEntries(CAT.map(p=>[p.id,p]));
 const ALIASES = {
- banana:['banana','bananas','platano','platanos'], manzana:['manzana','manzanas'], naranja:['naranja','naranjas'], pera:['pera','peras'], limon:['limon','limones'], uva:['uva','uvas'],frutilla:['frutilla','frutillas','fresa','fresas'],durazno:['durazno','duraznos'],mandarina:['mandarina','mandarinas'], kiwi:['kiwi','kiwis'], sandia:['sandia','sandias'],melon:['melon','melones'],palta:['palta','paltas','aguacate','aguacates'],tomate:['tomate','tomates'],papa:['papa','papas','patata','patatas'],cebolla:['cebolla','cebollas'],zanahoria:['zanahoria','zanahorias'],lechuga:['lechuga','lechugas'],zapallito:['zapallito','zapallitos'],zucchini:['zucchini','zucchinis'],zapallo:['zapallo','zapallos'],pepino:['pepino','pepinos'],berenjena:['berenjena','berenjenas'],morron:['morron','morrones','pimiento','pimientos'],ajo:['ajo','ajos'],acelga:['acelga','acelgas'],espinaca:['espinaca','espinacas'],remolacha:['remolacha','remolachas'],brocoli:['brocoli','brocolis'],choclo:['choclo','choclos'],batata:['batata','batatas'],rucula:['rucula'],perejil:['perejil'],huevos:['huevos','huevo'],aceite:['aceite de oliva','aceite'],oregano:['oregano'],miel:['miel'],arroz:['arroz'],azucar:['azucar'],lentejas:['lentejas','lenteja']
+ "banana":["banana", "bananas", "plátano", "plátanos"],
+ "manzana":["manzana", "manzanas"],
+ "naranja":["naranja", "naranjas"],
+ "pera":["pera", "peras"],
+ "limon":["limón", "limones"],
+ "uva":["uva", "uvas"],
+ "frutilla":["frutilla", "frutillas", "fresa", "fresas"],
+ "durazno":["durazno", "duraznos"],
+ "mandarina":["mandarina", "mandarinas"],
+ "kiwi":["kiwi", "kiwis"],
+ "sandia":["sandía", "sandías"],
+ "melon":["melón", "melones"],
+ "palta":["palta", "paltas", "aguacate", "aguacates"],
+ "tomate":["tomate", "tomates"],
+ "papa":["papa", "papas", "patata", "patatas"],
+ "papines":["papín", "papines", "papin", "papines andinos", "papines chicos", "papines pequeños"],
+ "cebolla":["cebolla", "cebollas"],
+ "zanahoria":["zanahoria", "zanahorias"],
+ "lechuga":["lechuga", "lechugas"],
+ "zapallito":["zapallito", "zapallitos"],
+ "zucchini":["zucchini", "zucchinis", "zapallito italiano"],
+ "zapallo":["zapallo", "zapallos", "calabaza", "calabazas"],
+ "pepino":["pepino", "pepinos"],
+ "berenjena":["berenjena", "berenjenas"],
+ "morron":["morrón", "morrones", "pimiento", "pimientos"],
+ "ajo":["ajo", "ajos"],
+ "acelga":["acelga", "acelgas"],
+ "espinaca":["espinaca", "espinacas"],
+ "remolacha":["remolacha", "remolachas"],
+ "brocoli":["brócoli", "brócolis"],
+ "choclo":["choclo", "choclos"],
+ "batata":["batata", "batatas", "camote"],
+ "rucula":["rúcula"],
+ "perejil":["perejil"],
+ "huevos":["huevos", "huevo", "maple de huevos"],
+ "aceite":["aceite de oliva", "aceite de girasol", "aceite de maíz", "aceite mezcla", "aceite"],
+ "oregano":["orégano"],
+ "miel":["miel", "miel de abejas"],
+ "arroz":["arroz"],
+ "azucar":["azúcar"],
+ "lentejas":["lentejas", "lenteja"],
+ "pomelo":["pomelo", "pomelos"],
+ "ciruela":["ciruela", "ciruelas"],
+ "cereza":["cereza", "cerezas"],
+ "damasco":["damasco", "damascos"],
+ "pelon":["pelón", "pelones", "nectarina", "nectarinas"],
+ "higo":["higo", "higos"],
+ "anana":["ananá", "ananás", "piña"],
+ "mango":["mango", "mangos"],
+ "papaya":["papaya", "papayas"],
+ "granada":["granada", "granadas"],
+ "caqui":["caqui", "kaki"],
+ "membrillo":["membrillo", "membrillos"],
+ "lima":["lima", "limas"],
+ "maracuya":["maracuyá", "maracuyás"],
+ "arandanos":["arándanos", "arándano"],
+ "frambuesa":["frambuesa", "frambuesas"],
+ "mora":["mora", "moras"],
+ "nispero":["níspero", "nísperos"],
+ "quinoto":["quinoto", "quinotos", "kumquat"],
+ "coco":["coco", "cocos"],
+ "tuna":["tuna", "tunas"],
+ "guayaba":["guayaba", "guayabas"],
+ "repollo":["repollo", "repollos"],
+ "coliflor":["coliflor", "coliflores"],
+ "apio":["apio"],
+ "puerro":["puerro", "puerros"],
+ "hinojo":["hinojo", "hinojos"],
+ "esparragos":["espárrago", "espárragos"],
+ "alcaucil":["alcaucil", "alcauciles", "alcachofa", "alcachofas"],
+ "chaucha":["chaucha", "chauchas", "judías verdes"],
+ "arvejas":["arveja fresca", "arvejas frescas", "arvejas", "arveja"],
+ "habas":["haba", "habas"],
+ "rabanito":["rabanito", "rabanitos"],
+ "nabo":["nabo", "nabos"],
+ "kale":["kale", "col rizada"],
+ "berro":["berro"],
+ "radicheta":["radicheta"],
+ "achicoria":["achicoria"],
+ "radicchio":["radicchio"],
+ "endivia":["endivia", "endivias"],
+ "champinones":["champiñón", "champiñones"],
+ "portobellos":["portobello", "portobellos"],
+ "girgolas":["gírgola", "gírgolas", "girgolás"],
+ "jengibre":["jengibre"],
+ "curcuma-fresca":["cúrcuma fresca", "raíz de cúrcuma"],
+ "mandioca":["mandioca", "mandiocas"],
+ "zapallo-tronco":["zapallo de tronco"],
+ "cebollin":["cebollín"],
+ "cilantro":["cilantro"],
+ "albahaca":["albahaca"],
+ "menta":["menta"],
+ "romero":["romero fresco", "romero"],
+ "tomillo":["tomillo fresco", "tomillo"],
+ "salvia":["salvia fresca", "salvia"],
+ "aji":["ají", "ajíes", "ajies", "ají picante", "jalapeño", "jalapeños"],
+ "repollo-bruselas":["repollitos de bruselas", "coles de bruselas"],
+ "sal":["sal", "sal fina", "sal gruesa"],
+ "pimienta":["pimienta", "pimienta negra", "pimienta blanca"],
+ "pimenton":["pimentón"],
+ "aji-molido":["ají molido"],
+ "comino":["comino"],
+ "ajo-polvo":["ajo en polvo"],
+ "canela":["canela"],
+ "curry":["curry"],
+ "curcuma-polvo":["cúrcuma en polvo", "cúrcuma molida"],
+ "laurel":["laurel"],
+ "romero-seco":["romero seco"],
+ "tomillo-seco":["tomillo seco"],
+ "garbanzos":["garbanzo", "garbanzos"],
+ "porotos":["poroto", "porotos", "alubia", "alubias"],
+ "arvejas-secas":["arvejas secas", "arveja seca"],
+ "polenta":["polenta"],
+ "avena":["avena"],
+ "pisingallo":["pisingallo", "maíz pisingallo"],
+ "harina":["harina", "harina integral"],
+ "fideos":["fideos", "fideo", "pasta"],
+ "chia":["chía", "semillas de chía"],
+ "lino":["lino", "semillas de lino"],
+ "sesamo":["sésamo", "semillas de sésamo"],
+ "girasol":["semillas de girasol"],
+ "nueces":["nueces", "nuez"],
+ "almendras":["almendra", "almendras"],
+ "mani":["maní", "manies", "maníes"],
+ "pasas":["pasas de uva", "pasas"],
+ "ciruelas-pasas":["ciruelas pasas", "ciruela pasa"],
+ "coco-rallado":["coco rallado"],
+ "yerba":["yerba", "yerba mate"],
+ "cafe":["café"],
+ "te":["té", "te en saquitos"],
+ "cacao":["cacao"],
+ "vinagre":["vinagre", "vinagre de alcohol", "vinagre de manzana"],
+ "aceitunas":["aceituna", "aceitunas"],
+ "mermelada":["mermelada"],
+ "dulce":["dulce de membrillo", "dulce de batata"],
+ "pure-tomate":["puré de tomate"],
+ "tomate-triturado":["tomate triturado"],
+ "choclo-lata":["choclo en lata"],
+ "arvejas-lata":["arvejas en lata"],
+ "agua":["agua mineral", "agua"]
 };
 const fmt=n=>'$'+Math.round(Number(n)||0).toLocaleString('es-AR');
 const escapeHtml=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -184,7 +487,7 @@ const save=()=>{try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data));}catc
 let page='inicio',category='Todos',search='',onlyUpdated=false,orderFilter='todos',selectedOrderId=1542,modalMode='',voiceWanted=false,voiceRecognition=null,voiceRestartTimer=null,modalOpen=false,voiceSavedCount=0;
 const el=id=>document.getElementById(id);
 const getPrice=p=>Number(data.prices[p.id]??p.defaultPrice);
-const isAvailable=p=>data.available[p.id]!==false;
+const isAvailable=p=>data.available[p.id]!==false&&(getPrice(p)>0);
 const getEstimated=o=>o.lines.reduce((s,l)=>s+l.requestedQty*l.unitPrice,0);
 const getActual=o=>o.lines.reduce((s,l)=>s+(Number(l.amount)||0),0);
 const timeAgo=o=>{const m=Math.max(0,Math.floor((Date.now()-new Date(o.createdAt).getTime())/60000));return m<1?'Recién':m<60?'Hace '+m+' min':'Hoy · '+new Date(o.createdAt).toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'});};
@@ -194,7 +497,7 @@ let toastTimeout=null;
 function notify(message){const t=el('toast');t.textContent=message;t.classList.add('show');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>t.classList.remove('show'),3700);}
 function navigate(next){if(next!=='precios'&&voiceWanted)stopVoice();page=next;document.body.classList.toggle('is-price-page',next==='precios');document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+next));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===next));const texts={inicio:['TU NEGOCIO, ORGANIZADO','¡Buen día!','Tenés todo listo para empezar la jornada.'],precios:['CATÁLOGO DEL COMERCIO','Precios y productos','Actualizá rápido y seguí atendiendo.'],pedidos:['VENTAS Y PREPARACIÓN','Tus pedidos','Los pedidos entran acá y podés ajustar cada importe.'],ofertas:['PROMOCIONES DEL LOCAL','Ofertas y bolsones','Armá combinaciones que les sirvan a tus clientes.'],local:['IDENTIDAD DEL NEGOCIO','Mi local','Datos y preferencias del comercio.']};[el('pageEyebrow').textContent,el('pageTitle').textContent,el('pageSubtitle').textContent]=texts[next];if(next==='inicio')renderHome();if(next==='precios')renderProducts();if(next==='pedidos')renderOrders();if(next==='ofertas')renderOffers();if(next==='local')renderShop();window.scrollTo({top:0,behavior:'smooth'});}
 function renderHome(){const pending=data.orders.filter(o=>o.status==='nuevo').length;const doing=data.orders.filter(o=>o.status==='preparando').length;const ready=data.orders.filter(o=>o.status==='listo').length;const digital=data.orders.filter(o=>o.status!=='entregado').reduce((s,o)=>s+getActual(o),0);el('stats').innerHTML=[["🛎️",pending,'Pedidos nuevos'],['🧺',doing,'Preparando'],['✅',ready,'Listos para entregar'],['💵',fmt(digital),'Total de pedidos activos']].map(s=>`<div class="card stat"><div class="stat-icon">${s[0]}</div><div class="stat-value">${s[1]}</div><div class="stat-label">${s[2]}</div></div>`).join('');el('recentOrders').innerHTML=data.orders.slice().sort((a,b)=>b.createdAt.localeCompare(a.createdAt)).slice(0,4).map(o=>`<div class="mini-order"><div class="roundicon">🧺</div><div class="mini-body"><strong>${escapeHtml(o.name)}</strong><small>#${o.id} · ${o.lines.length} productos · ${escapeHtml(timeAgo(o))}</small></div><div style="text-align:right"><div class="price">${fmt(getActual(o))}</div><span class="pill ${statusClass[o.status]}">${statusText[o.status]}</span></div><button class="btn btn-ghost btn-sm" data-order-open="${o.id}" aria-label="Abrir pedido ${o.id}">→</button></div>`).join('');el('brandName').textContent=data.shop.name||'Mi Verdulería';}
-function renderProducts(){document.querySelectorAll('[data-category]').forEach(b=>b.classList.toggle('active',b.dataset.category===category));let items=CAT.filter(p=>(category==='Todos'||category===p.category)&&(!search||normalize(p.name).includes(normalize(search))||normalize(p.family).includes(normalize(search)))&&(!onlyUpdated||data.updated[p.id]));el('productGrid').innerHTML=items.map(p=>`<div class="product-card ${isAvailable(p)?'':'inactive'}"><div class="produce-art" style="--art:${p.bg}">${p.emoji}</div><div class="product-content"><div class="product-name">${escapeHtml(p.name)}</div><div class="product-sub">${escapeHtml(p.category)} · ${escapeHtml(p.unit)}${isAvailable(p)?'':' · Oculto'}</div><div class="product-price">${fmt(getPrice(p))}<span class="muted" style="font-size:11px;font-weight:500"> / ${escapeHtml(p.unit)}</span></div></div><button class="editbtn" data-edit-product="${p.id}" title="Editar ${escapeHtml(p.name)}">✎</button></div>`).join('')||'<div class="empty">No encontramos productos con ese criterio.</div>';el('productCount').textContent=`${items.length} productos visibles · ${CAT.length} artículos y variedades en el catálogo general · ${Object.keys(data.updated).length} precios actualizados en este navegador`;
+function renderProducts(){document.querySelectorAll('[data-category]').forEach(b=>b.classList.toggle('active',b.dataset.category===category));let items=CAT.filter(p=>(category==='Todos'||category===p.category)&&(!search||normalize(p.name).includes(normalize(search))||normalize(p.family).includes(normalize(search)))&&(!onlyUpdated||data.updated[p.id]));el('productGrid').innerHTML=items.map(p=>`<div class="product-card ${isAvailable(p)?'':'inactive'}"><div class="produce-art" style="--art:${p.bg}">${p.emoji}</div><div class="product-content"><div class="product-name">${escapeHtml(p.name)}</div><div class="product-sub">${escapeHtml(p.category)} · ${escapeHtml(p.unit)}${isAvailable(p)?'':' · Oculto'}</div><div class="product-price">${getPrice(p)>0?fmt(getPrice(p)):'Sin precio'}<span class="muted" style="font-size:11px;font-weight:500"> / ${escapeHtml(p.unit)}</span></div></div><button class="editbtn" data-edit-product="${p.id}" title="Editar ${escapeHtml(p.name)}">✎</button></div>`).join('')||'<div class="empty">No encontramos productos con ese criterio.</div>';el('productCount').textContent=`${items.length} productos visibles · ${CAT.length} artículos y variedades en el catálogo general · ${Object.keys(data.updated).length} precios actualizados en este navegador`;
  el('showUpdatedButton').textContent=onlyUpdated?'✓ Mostrar todos':'🕒 Actualizados';}
 function renderOrders(){el('pendingCounter').textContent=data.orders.filter(o=>o.status==='nuevo').length+' nuevos';document.querySelectorAll('[data-status-filter]').forEach(b=>b.classList.toggle('active',b.dataset.statusFilter===orderFilter));const list=data.orders.slice().filter(o=>orderFilter==='todos'||o.status===orderFilter).sort((a,b)=>b.createdAt.localeCompare(a.createdAt));if(!list.some(o=>o.id===selectedOrderId))selectedOrderId=list[0]?.id||null;el('ordersList').innerHTML=list.map(o=>`<button class="order-item ${o.id===selectedOrderId?'active':''}" data-select-order="${o.id}"><div class="order-line"><h4>${escapeHtml(o.name)} <span class="muted" style="font-weight:500">#${o.id}</span></h4><span class="pill ${statusClass[o.status]}">${statusText[o.status]}</span></div><div class="order-line order-meta"><span>${o.lines.length} productos · ${escapeHtml(o.mode)}</span><b>${fmt(getActual(o))}</b></div><div class="order-meta">${escapeHtml(timeAgo(o))}</div></button>`).join('')||'<div class="empty"><div class="big">🧺</div>No hay pedidos en esta categoría.</div>';renderOrderDetail();}
 function renderOrderDetail(){const o=data.orders.find(o=>o.id===selectedOrderId);if(!o){el('orderDetail').innerHTML='<div class="empty"><div class="big">🧺</div>Seleccioná un pedido para ver sus detalles.</div>';return;}
@@ -208,14 +511,62 @@ function openModal(html){modalOpen=true;el('modal').innerHTML=html;el('overlay')
 function closeModal(){modalOpen=false;el('overlay').classList.remove('open');el('modal').innerHTML='';document.body.style.overflow='';if(voiceWanted)resumeVoice();}
 function editProduct(id){const p=PRODUCT_BY_ID[id];if(!p)return;openModal(`<div class="modal-head"><div><h2 id="modalTitle">${p.emoji} ${escapeHtml(p.name)}</h2><p>Precio de venta de tu local</p></div><button class="xbtn" data-close-modal>✕</button></div><form id="productEditForm"><input type="hidden" name="productId" value="${p.id}"><label class="fieldlabel" for="editPrice">Precio por ${escapeHtml(p.unit)} ($)</label><input id="editPrice" name="price" type="number" class="input" inputmode="decimal" min="0" step="1" value="${getPrice(p)}" required><p class="smallhelp">Unidad de venta del artículo: ${escapeHtml(p.unit)}.</p><div class="switch-row" style="margin:20px 0"><span><strong>Mostrar producto a mis clientes</strong><br><span class="muted" style="font-size:12px">Podés ocultarlo cuando se agote.</span></span><input class="toggle" type="checkbox" name="available" ${isAvailable(p)?'checked':''}></div><button class="btn btn-primary fullwidth" type="submit">Guardar cambios</button></form>`);el('editPrice').focus();el('editPrice').select();}
 function saveProduct(id,price,available){if(!PRODUCT_BY_ID[id]||!Number.isFinite(price)||price<0)return notify('Ingresá un precio válido.');data.prices[id]=Math.round(price);data.available[id]=available;data.updated[id]=new Date().toISOString();save();renderProducts();if(page==='inicio')renderHome();if(page==='precios'){voiceSavedCount++;el('lastSaved').textContent='✓ '+PRODUCT_BY_ID[id].name+' · '+fmt(price)+' / '+PRODUCT_BY_ID[id].unit;}notify(PRODUCT_BY_ID[id].name+': '+fmt(price)+' / '+PRODUCT_BY_ID[id].unit);}
-function chooseVariant(family,price,source){const choices=CAT.filter(p=>p.family===family);if(choices.length===1){saveProduct(choices[0].id,price,true);return;}if(!choices.length){notify('No encontramos el producto en el catálogo.');return;}if(voiceRecognition){try{voiceRecognition.abort();}catch(e){}}
- openModal(`<div class="modal-head"><div><h2 id="modalTitle">${escapeHtml(family)} · ${fmt(price)}</h2><p>Elegí la variedad</p></div><button class="xbtn" data-close-modal>✕</button></div><div class="variant-grid">${choices.map(p=>`<button class="variant-btn" data-variant-id="${p.id}" data-price="${price}"><span class="variant-emoji">${p.emoji}</span><b>${escapeHtml(p.variant||p.name)}</b></button>`).join('')}</div>`);
+function chooseVariant(family,price,source,phrase=''){
+  let choices=CAT.filter(p=>p.family===family);
+  if(!choices.length){notify('No encontramos el producto en el catálogo.');return;}
+  const raw=normalize(phrase).replace(/(\d)(ml|gr|kg|g|l)\b/g,'$1 $2');
+  // En almacén primero limitamos por tipo, luego se elige el envase o la presentación.
+  const grupo=({aceite:['oliva','girasol','maiz','mezcla'],vinagre:['alcohol','manzana'],miel:['organica'],arroz:['integral','parboil','blanco'],sal:['fina','gruesa'],pimienta:['negra','blanca'],huevos:['campo','colorados','blancos']})[family];
+  if(grupo){const tipo=grupo.find(t=>(' '+raw+' ').includes(' '+t+' '));if(tipo){const filtradas=choices.filter(p=>normalize(p.variant+' '+p.name).includes(tipo));if(filtradas.length)choices=filtradas;}}
+  const medida=raw.match(/\b(250|500|900|1000|1500|100|50|25)\s*(ml|mililitros?|g|gr|gramos?|kg)\b/);
+  const litro=raw.match(/\b(1|uno|un)\s*(litros?|l)\b/);
+  const kilo=raw.match(/\b(1|uno|un)\s*(kilos?|kg)\b/);
+  if(choices.length>1&&(medida||litro||kilo)){
+    const pattern=medida? new RegExp('\\b'+medida[1]+'\\s*(?:ml|g|kg)\\b') : litro? /\b1 (?:litro|l)\b/: /\b1 kg\b/;
+    const enPresentacion=choices.filter(p=>pattern.test(normalize(p.name+' '+p.variant)));
+    if(enPresentacion.length)choices=enPresentacion;
+  }
+  if(choices.length===1){saveProduct(choices[0].id,price,true);return;}
+  if(voiceRecognition){try{voiceRecognition.abort();}catch(e){}}
+  const almacen=choices[0].category==='Almacén';
+  openModal(`<div class="modal-head"><div><h2 id="modalTitle">${escapeHtml(family)} · ${fmt(price)}</h2><p>${almacen?'Elegí el tipo y la presentación':'Elegí la variedad'}</p></div><button class="xbtn" data-close-modal>✕</button></div><div class="variant-grid">${choices.map(p=>`<button class="variant-btn" data-variant-id="${p.id}" data-price="${price}"><span class="variant-emoji">${p.emoji}</span><b>${escapeHtml(p.variant||p.name)}</b><span class="muted" style="font-size:11px">${escapeHtml(p.unit)}</span></button>`).join('')}</div>`);
 }
 const nUnits={cero:0,un:1,uno:1,una:1,dos:2,tres:3,cuatro:4,cinco:5,seis:6,siete:7,ocho:8,nueve:9,diez:10,once:11,doce:12,trece:13,catorce:14,quince:15,dieciseis:16,diecisiete:17,dieciocho:18,diecinueve:19,veinte:20,veintiuno:21,veintidos:22,veintitres:23,veinticuatro:24,veinticinco:25,veintiseis:26,veintisiete:27,veintiocho:28,veintinueve:29,treinta:30,cuarenta:40,cincuenta:50,sesenta:60,setenta:70,ochenta:80,noventa:90,cien:100,ciento:100,doscientos:200,trescientos:300,cuatrocientos:400,quinientos:500,seiscientos:600,setecientos:700,ochocientos:800,novecientos:900};
 function parseWordsPrice(s){const chunks=normalize(s).split(' ');let current=0,total=0,found=false;for(const w of chunks){if(w==='mil'){total+=(current||1)*1000;current=0;found=true;continue;}if(w==='millon'||w==='millones'){total+=(current||1)*1000000;current=0;found=true;continue;}if(Object.hasOwn(nUnits,w)){current+=nUnits[w];found=true;continue;}if(w==='y')continue;if(found)break;}return found?total+current:null;}
-function extractPrice(raw){const s=normalize(raw);const digit=s.match(/(?:\d{1,3}(?:[.,]\d{3})+|\d{3,7})/);if(digit)return Number(digit[0].replace(/[.,]/g,''));const n=s.match(/\b\d{1,2}\b/);if(n&&(/\bpesos?\b/.test(s)))return Number(n[0]);let start=-1;const terms=s.split(' ');for(let i=0;i<terms.length;i++)if(terms[i]==='mil'||Object.hasOwn(nUnits,terms[i])){start=i;break;}if(start<0)return null;return parseWordsPrice(terms.slice(start).join(' '));}
-function extractProduct(raw){const s=normalize(raw);let best=null;for(const [family,aliases] of Object.entries(ALIASES)){for(const alias of aliases){const at=' '+normalize(alias)+' ';if((' '+s+' ').includes(at)&&(!best||alias.length>best.length))best={family,length:alias.length};}}if(!best)return null;const list=CAT.filter(p=>p.family===best.family);const variant=list.find(p=>p.variant&&normalize(s).includes(normalize(p.variant)));return {family:best.family,variant};}
-function applyPhrase(text){const product=extractProduct(text),price=extractPrice(text);if(!product){notify('No reconocí el producto. Probá «banana 2800».');return;}if(price==null||!Number.isFinite(price)||price<0){notify('Reconocí el producto, pero no el precio. Probá «banana 2800».');return;}if(product.variant){saveProduct(product.variant.id,price,true);return;}chooseVariant(product.family,price,'text');}
+function extractPrice(raw){
+  const s=normalize(raw);
+  // La cifra final es el precio: "miel 500 gramos 6500" no debe tomar 500 como precio.
+  const numbers=[...s.matchAll(/\b(?:\d{1,3}(?:[.,]\d{3})+|\d{1,8})\b/g)];
+  if(numbers.length){
+    let candidates=numbers.filter(n=> !/^(?:g|gr|gramos?|kg|kilos?|ml|mililitros?|l|litros?|unidades?)\b/.test(s.slice(n.index+n[0].length).trim()));
+    if(candidates.length){
+      const item=candidates[candidates.length-1][0];
+      return Number(item.replace(/[.,]/g,''));
+    }
+    // Si la cifra era solo el tamaño del envase, aún puede haber precio en palabras.
+  }
+  // El texto puede terminar en "el kilo" o "la botella".
+  const sinUnidadFinal=s.replace(/\bpesos?\b/g,'').replace(/\s+(?:el|la|por)\s+(?:kilos?|kg|litros?|frascos?|botellas?|bolsas?|paquetes?|docenas?|unidades?|atados?|bandejas?|maples?)\s*$/,'').trim();
+  const terminos=sinUnidadFinal.split(' ');
+  const permitidos=new Set([...Object.keys(nUnits),'mil','millon','millones','y']);
+  const palabras=[];
+  for(let i=terminos.length-1;i>=0;i--){if(permitidos.has(terminos[i]))palabras.unshift(terminos[i]);else if(palabras.length)break;}
+  return palabras.length?parseWordsPrice(palabras.join(' ')):null;
+}
+function extractProduct(raw){
+ const s=normalize(raw).replace(/(\d)(ml|gr|kg|g|l)\b/g,'$1 $2');
+ let best=null;
+ for(const [family,aliases] of Object.entries(ALIASES)){
+   for(const alias of aliases){const nombre=normalize(alias);if((' '+s+' ').includes(' '+nombre+' ')&&(!best||nombre.length>best.length))best={family,length:nombre.length};}
+ }
+ if(!best)return null;
+ const list=CAT.filter(p=>p.family===best.family);
+ // Reconocer variedades completas simples como "tomate perita" y "banana ecuatoriana".
+ // Para aceites y envases se elige con el tipo y tamaño si fueron pronunciados.
+ const variant=list.find(p=>p.variant&&p.category!=='Almacén'&&(' '+s+' ').includes(' '+normalize(p.variant)+' '));
+ return {family:best.family,variant};
+}
+function applyPhrase(text){const product=extractProduct(text),price=extractPrice(text);if(!product){notify('No reconocí el producto. Probá «banana 2800».');return;}if(price==null||!Number.isFinite(price)||price<0){notify('Reconocí el producto, pero no el precio. Probá «banana 2800».');return;}if(product.variant){saveProduct(product.variant.id,price,true);return;}chooseVariant(product.family,price,'text',text);}
 const SpeechEngine=window.SpeechRecognition||window.webkitSpeechRecognition;
 function updateVoiceUI(){
   el('micButton').classList.toggle('on',voiceWanted);

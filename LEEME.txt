@@ -1,26 +1,29 @@
-SISTEMA VERDULERÍAS - PRUEBA DEL VERDULERO (VERSIÓN 2)
+SISTEMA VERDULERÍAS - V3 CATÁLOGO AMPLIADO
 
-NOVEDADES
-- Pantalla inicial de carga de precios simplificada.
-- Al dictar producto y precio, aparece la selección de variedad.
-- Al seleccionar, guarda e intenta escuchar el siguiente producto.
-- Botón Terminar para detener el dictado.
-- Opción táctil y teclado del celular en «Escribir o usar el micrófono del teclado».
-- Catálogo oculto inicialmente y desplegable.
-- Los pedidos, ofertas y datos del local de la versión anterior se mantienen.
+Catálogo común: 230 artículos y presentaciones (antes 66).
 
-PUBLICAR EN GITHUB PAGES (HTTPS)
-1) Creá un repositorio PÚBLICO en GitHub, por ejemplo verdulerias-prueba.
-2) Subí el archivo index.html de esta carpeta a la RAÍZ del repositorio.
-3) En Settings > Pages, elegí Deploy from a branch, rama main, carpeta /(root). Guardá.
-4) Abrí el enlace HTTPS mostrado por GitHub Pages desde Chrome Android.
-5) Autorizá el micrófono cuando Chrome lo solicite.
+- Papines: surtidos, colorados y amarillos.
+- Más frutas, hortalizas, hierbas y productos regionales.
+- Almacén ampliado: aceites, mieles, huevos, condimentos, secos,
+  legumbres, frutos secos, cereales y conservas.
+- Selección de tipo/presentación para aceite, miel y otros artículos.
+- Prueba por voz y alternativa táctil.
+- Los artículos nuevos empiezan sin precio y no se consideran publicados
+  hasta que el comercio les asigna un importe.
+- Se conservan los IDs anteriores y los datos del navegador (localStorage).
+- Los precios ya precargados de V2 siguen siendo valores ilustrativos.
 
-IMPORTANTE
-GitHub Pages publica páginas estáticas: esta prueba NO recibe pedidos reales.
-Los datos se guardan localmente en cada navegador (localStorage).
-No hay que subir credenciales ni datos de clientes al repositorio público.
-Chrome para Android no garantiza escucha ininterrumpida: el código intenta
-reanudar tras cada producto, pero puede requerir tocar Comenzar nuevamente.
-El acceso por voz puede necesitar Internet y compatibilidad del navegador.
+EJEMPLOS PARA PROBAR EN CHROME ANDROID
+Papines, 2300 el kilo
+Aceite de oliva, 9500 la botella
+Miel de 500 gramos, 6700 el frasco
+Orégano, 1400 la bolsa
+Harina, 1200 el paquete
 
+PUBLICACIÓN
+Usar el script de actualización de GitHub, NO el de primera creación.
+URL pública de prueba: https://jwgf.github.io/sistema-verdulerias-demo/
+
+Demo sin base de datos: los cambios se guardan en el navegador del dispositivo.
+GitHub Pages es público; usar datos ficticios.
+El reconocimiento de voz depende de Chrome Android y sus permisos.
