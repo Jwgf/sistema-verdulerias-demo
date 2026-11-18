@@ -1,22 +1,16 @@
-SISTEMA VERDULERIAS - V4 - Catalogo ampliado y dictado
+SISTEMA VERDULERIAS — V5 — PRODUCTOS PROPIOS Y UNIDADES DE PRECIO
 
-Publicar desde PowerShell con Actualizar_Verdulerias_GitHub_v4.ps1.
+Novedades:
+- Dictar «Jengibre 100 gramos 1000 pesos»: guardar $1.000/100g, equivalente a $10.000/kg.
+- Dictar un producto que no esté en el catálogo: ofrecer agregarlo localmente.
+- Botón discreto «Agregar producto que no aparece»: rubro, nombre, unidad de venta, precio.
+- Los productos propios se pueden reconocer por voz en sesiones posteriores.
+- En el catálogo y al editar aparece la unidad de precio elegida (kg, 100g, 250g, 500g).
+- Se preserva la clave localStorage de la V4 y los códigos de los 440 productos anteriores.
+- Las ofertas y pedidos de ejemplo siguen intactos.
 
-Esta entrega tiene 440 articulos, variedades y presentaciones
-(210 articulos mas que V3).
+IMPORTANTE: por ahora los productos nuevos y precios se guardan solo en este navegador.
+No hay sincronización con la demo independiente del cliente.
 
-Pruebas principales:
-- "miel 6500 el frasco" => elegir presentacion y guardar precio.
-- "miel" => elegir presentacion, indicar precio manualmente y guardar.
-- "papines 2300 el kilo" => variedades de papines.
-- "aceite de oliva 9500" => aceite por presentacion.
-- "quinoa 4800" => variedades de quinoa.
-- "cajon" no debe generar un producto erroneo.
-
-Si Chrome entiende otra palabra, la aplicacion mostrara exactamente lo que
-transcribio Chrome para diferenciar dictado de reconocimiento de catalogo.
-
-Los precios guardados en este mismo navegador se conservan porque permanece
-igual la clave de almacenamiento y los codigos de todos los productos V3.
-Los datos son locales: no hay backend ni pedidos reales.
-El sitio en GitHub Pages es publico: usar datos de prueba.
+Prueba: decir «Jengibre 100 gramos 1000 pesos» y mirar el importe del catálogo.
+Luego decir «Palmitos 2500», agregar el producto como almacén, y volver a dictarlo.
